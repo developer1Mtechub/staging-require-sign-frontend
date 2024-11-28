@@ -1,14 +1,5 @@
 {
-  "schemaVersion" :1 ,
-  "dockerfileLines" :[
-      "FROM node:8.9.2-alpine",
-      "RUN mkdir -p /usr/src/app",
-      "WORKDIR /usr/src/app",
-      "COPY ./src/dist /usr/src/app/",
-      "ENV NODE_ENV production",
-      "ENV PORT 80",
-      "RUN npm install http-server -g",
-      "EXPOSE 80",
-      "CMD [\"http-server\", \"-a\", \"0.0.0.0\", \"-p\", \"80\"]"
-  ]
+  "schemaVersion": 2,
+  "templateId": "static",
+  "publicDirectory": "dist"
 }
