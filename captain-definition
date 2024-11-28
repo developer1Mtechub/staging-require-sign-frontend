@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "image": {
+    "repository": "your-docker-image-repo",  // Docker image repository, or leave empty for build-from-source
+    "dockerfilePath": "./Dockerfile"  // Path to your Dockerfile
+  },
+  "start": {
+    "cmd": "npm run start"  
+  }
+}
