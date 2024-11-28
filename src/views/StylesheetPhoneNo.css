@@ -1,0 +1,162 @@
+/* Phone input  */
+/* .input-phone-number input:focus {
+    outline: none !important;
+    border: 2px solid #0fc1f3 !important;
+    box-shadow: none !important;
+  }
+  
+  .input-phone-number input {
+    height: 43px;
+    width: 100% !important;
+    outline: none !important;
+    border: 1px solid lightgray !important;
+    box-shadow: none !important;
+  } */
+  /* Custom styling to match other inputs */
+  .card-logos img {
+    display: inline-block;
+    /* margin-right: 10px; */
+  }
+  /* .table_header_size{
+    font-size: 18px !important;
+    font-weight: 700 !important
+  }
+  .table_row_size{
+    font-size: 16px !important;
+  } */
+  
+  .FormRow {
+    position: relative;
+  }
+  
+  .cvc-icon {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the image doesn't interfere with input */
+  }
+  .error-message {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+.input-phone-number input {
+  height: 42px;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  /* padding: 5px 10px; */
+  color:#474747;
+  font-size: 14px;
+  box-shadow: none;
+  outline: none;
+}
+
+.input-phone-number input:focus {
+  border: 2px solid #0fc1f3;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Ensure the input inside the phone input component is styled properly */
+.phone-input-container {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid lightgray; */
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+
+.phone-input-container input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+
+  
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .nav-item .icon {
+    margin-right: 10px;
+  }
+  
+  .nav-item:hover {
+    color: #3490dc; /* Example hover color */
+  }
+  
+  .nav-item.active {
+    color: #3490dc;
+    border-bottom: 3px solid #3490dc;
+  }
+  
+  /* Styles for hover and dragging */
+.sortable-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  background-color: #fff;
+  cursor: grab;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sortable-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sortable-item.dragging {
+  background-color: #e0e0e0;
+  opacity: 0.9;
+  cursor: grabbing;
+}
+.table-responsive-sm {
+  overflow-x: auto;
+}
+
+.table_header_size h2, .table_row_size h2 {
+  font-size: 16px !important;
+  margin: 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis;
+}
+
+.action-button {
+  box-shadow: none;
+  margin-left: 10px;
+  font-size: 14px;
+  white-space: nowrap; 
+}
+
+.button-text {
+  font-size: 16px;
+  white-space: nowrap; 
+}
+/* media qiery  */
+@media (max-width: 730px) {
+  .table_header_size h2, .table_row_size h2 {
+    font-size: 12px !important; /* Smaller font size for smaller screens */
+  }
+  
+  .action-button {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .table_row_size {
+    padding: 10px;
+  }
+  /* .table_header_size{
+    font-size: 14px !important;
+  }
+  .table_row_size{
+    font-size: 14px !important;
+  } */
+}

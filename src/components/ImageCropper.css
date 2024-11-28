@@ -1,0 +1,325 @@
+/* Example CSS to style the resizing handles */
+.custom-react-crop .ReactCrop__handle {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+.containerStyle {
+  max-width: 320px; /* Adjust based on your layout */
+  margin: auto;
+  padding: 10px;
+}
+
+/* Input field style */
+.inputStyle {
+  width: 100%; /* Full width */
+  padding: 10px 14px; /* Padding for text inside input */
+  font-size: 16px; /* Text size */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  display: block; /* Block level input */
+}
+
+/* Enhancements for the phone input specifically */
+.react-phone-number-input__row {
+  display: flex;
+  align-items: center;
+}
+
+.react-phone-number-input__country {
+  margin-right: 10px; /* Space between country icon and input */
+}
+
+.react-phone-number-input__icon {
+  width: 24px; /* Icon size */
+  height: 24px; /* Icon size */
+  border-radius: 50%; /* Circular icon */
+  overflow: hidden; /* Ensure no overflow */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.react-phone-number-input__input {
+  flex: 1; /* Take up remaining space */
+  border: none; /* Remove default border */
+  outline: none; /* Remove focus outline */
+  font-size: 16px; /* Match text size */
+}
+/* Remove default border from PhoneInput input field */
+/* Assuming .phone-input-container is the class of the parent element */
+.phone-input-container .react-phone-number-input__input {
+  border: none !important;
+}
+
+/* Alternatively, using the :not() pseudo-class to increase specificity */
+/* .react-phone-number-input__input:not() {
+  border: none !important;
+} */
+
+
+/* cropper advanced  */
+.cropper-background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cropper-stencil {
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.cropper-stencil .cropper-line {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.cropper-stencil .cropper-handler {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* pricing css  */
+.header{
+  color: rgb(22, 98, 167);
+  font-weight: 900;
+  font-size: 28px;
+  display:flex;
+  margin-block: 20px;
+  justify-content: center;
+
+}
+.header-plan-name{
+  color:rgb(37, 178, 232);
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 22px;
+}
+.bold-column{
+  font-weight: 900;
+  color:rgb(79, 97, 105);
+  font-size: 19px;
+}
+.paragrph-head{
+  font-weight: 900;
+  font-size: 28px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  color:black
+
+}
+.pricing-plans {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.toggle-options {
+  margin: 20px 0;
+  font-weight: 900;
+  font-size: 25px;
+  color: black;
+}
+.annual{
+  margin-right: 10px;
+}
+.monthly{
+  margin-left: 10px;
+}
+/* 
+.plan-table {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.plan-column {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 22%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-column h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+.monthly-price {
+  color: #999;
+}
+
+.cta-button {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.plan-details {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.plan-details li {
+  margin: 5px 0;
+}
+ */
+ .plan-table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Three columns */
+  gap: 20px; /* Space between columns */
+  margin-top: 30px;
+  padding: 20px;
+}
+.price-name{
+  font-weight: 900;
+}
+
+.plan-column {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Background color for the cards */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.plan-column h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.price {
+  font-size: 28px;
+  color: #007bff;
+  margin: 15px 0;
+}
+
+.price span {
+  font-size: 16px;
+  color: #888;
+}
+
+.monthly-price {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border:none;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.plan-details {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+.table-fonts{
+  font-size: 18px;
+ color:rgb(79, 97, 105);
+}
+.plan-details li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.plan-details strong {
+  font-weight: bold;
+  color: #333;
+}
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.pricing-table th {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+.subheader{
+  font-size: 16px;
+ 
+}
+/* media query  */
+@media (max-width: 768px) {
+  .header-plan-name{
+    color:rgb(37, 178, 232);
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .bold-column{
+    font-weight: 900;
+    color:rgb(79, 97, 105);
+    font-size: 16px;
+  }
+  .table-fonts{
+    font-size: 16px;
+   color:rgb(79, 97, 105);
+  }
+  .header{
+    color: rgb(22, 98, 167);
+    font-weight: 900;
+    font-size: 20px;
+    display:flex;
+    margin-block: 20px;
+    justify-content: center;
+  
+  }
+  .subheader{
+    font-size: 16px;
+   
+  }
+}
+
